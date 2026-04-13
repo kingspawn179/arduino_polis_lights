@@ -1,0 +1,26 @@
+int qirmiziled =3;
+int maviled = 5;
+void setup() {
+pinMode(qirmiziled, OUTPUT);
+pinMode(maviled, OUTPUT);
+
+
+}
+
+void loop() {
+  //red lights on
+  digitalWrite(qirmiziled,HIGH);
+  digitalWrite(maviled,LOW);
+  delay(300);
+// red lights off
+  digitalWrite(qirmiziled,LOW);
+  delay(100);
+//blue lights on
+digitalWrite(maviled, HIGH);
+delay(100);
+//blue lights off
+digitalWrite(maviled, LOW);
+delay(100);
+}
+
+//free code
